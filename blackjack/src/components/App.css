@@ -1,0 +1,48 @@
+.bj-app {
+  width: auto;
+  margin: 0% 1%;
+  display: flex;
+}
+
+.bj-app-newgame {
+  display: grid;
+  justify-content: left;
+  width: 50%;
+}
+
+.bj-app-score {
+  display: grid;
+  justify-content: right;
+  justify-items: stretch;
+  width: 50%;
+}
+
+.bj-app-stake-betting-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+}
+
+.bj-betting-button-5 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.bj-betting-button-10 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.bj-betting-button-50 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.bj-betting-button-100 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.bj-betting-button-500 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.bj-betting-button-card {
+  grid-area: 2 / 1 / 3 / 3;
+}
+.bj-betting-button-stop {
+  grid-area: 2 / 4 / 3 / 6;
+}
