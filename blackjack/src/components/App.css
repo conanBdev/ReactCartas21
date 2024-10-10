@@ -1,9 +1,47 @@
+button, select{
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 2px 3px 4px 0px #2D2D2D;
+}
+
+button:hover{
+  background-color: #252525;
+  color: #ffffff;
+}
+
+button:active{
+ transform: scale(0.95);
+}
+
+button:disabled{  
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#select-points{
+  margin-left: 5px;
+}
+
 .bj-app {
   width: auto;
   margin: 0% 1%;
+  padding: 1%;
   display: flex;
+  
+  border: 15px solid #252525;
+  background-color: #ffffff;
+  border-radius: 25px;
 }
 
+/** MENÚ SUPERIOR **/
 .bj-app-newgame {
   display: grid;
   justify-content: left;
@@ -46,3 +84,35 @@
 .bj-betting-button-stop {
   grid-area: 2 / 4 / 3 / 6;
 }
+
+/** TABLERO DE JUEGO **/
+.bj-app-board-message{
+  width: auto;
+  display: grid;
+  align-content: center;
+}
+
+.bj-app-board-game{
+  width: auto;
+  display: grid;
+  align-content: center;
+}
+
+.bj-board-crupier-card, .bj-board-player-card{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+/** OTROS **/
+.oculto{
+  visibility: hidden;
+  display: none;
+}
+
+.not-active { 
+  pointer-events: none; 
+  cursor: default; 
+  opacity: 0.5;
+} 

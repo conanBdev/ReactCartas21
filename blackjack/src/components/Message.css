@@ -1,0 +1,11 @@
+.info{
+    width: 50%;
+    margin: 2% 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    
+    border: 8px solid #252525;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
